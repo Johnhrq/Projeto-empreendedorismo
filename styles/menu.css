@@ -1,0 +1,12 @@
+#menu {
+    display: flex;
+    align-items: flex start;
+    justify-content:space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.content-item {
+    flex: 1;
+    max-width: 30%;
+    font-size: 0.1rem;
+}

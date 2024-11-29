@@ -1,0 +1,127 @@
+/* Estilo Geral */
+body {
+    background-color: #fff9ea; /* Fundo neutro */
+    font-family:  'Poppins', sans-serif;
+    color: #333333; /* Texto escuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: rgb(69, 128, 62); /* Verde musgo */
+    color: rgb(0, 5, 1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Seção Principal */
+.main-content {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff9ea; /* Fundo branco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1d1d1d; 
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1d1d1d;
+}
+
+/* Lista de Vagas */
+.job-listing {
+    margin-top: 30px;
+}
+
+.job-listing .job {
+    background-color: #F8F4E6; /* Bege claro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.job-listing .job:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1d1d1d; 
+}
+
+.job p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #1d1d1d;
+}
+
+.job .apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F1E5A9; 
+    color: #1d1d1d; 
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.job .apply-btn:hover {
+    background-color: #A8D5BA; /* Verde claro */
+    color: white;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #C2B280; /* Marrom claro */
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .job h3 {
+        font-size: 1.3rem;
+    }
+
+    .job p {
+        font-size: 0.9rem;
+    }
+
+    .job .apply-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

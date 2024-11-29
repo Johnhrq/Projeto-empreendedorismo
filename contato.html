@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agromilho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    
+</head> 
+<body>
+    <header>
+     <nav id="navbar">
+<i class="fa-solid fa-leaf" id="nav-logo"> agromilho</i>
+    <ul id="nav_list">
+        <li class="nav-item" active>
+    <a href="index.html">Início</a>
+        </li>
+         <li class="nav-item">
+            <a href="sobre.html">Sobre nós</a>
+            </li>
+             <li class="nav-item">
+             <a href="trabalho.html">Trabalhe conosco</a>
+        </li>
+        <li class="nav-item">
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+</ul>
+<button class="btn-default" id="workWithUsButton"> 
+  candidatar-se
+</button>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const button = document.getElementById("workWithUsButton");
+      if (button) {
+          button.addEventListener("click", function () {
+              window.location.href = "trabalho.html";
+          });
+      } else {
+          console.error("Botão não encontrado!");
+      }
+  });
+</script>
+ </nav>
+</header>
+<main>
+    <section class="content">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
+      <form id="contact-form">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="feedback" class="feedback"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Agromilho. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
